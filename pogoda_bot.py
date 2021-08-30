@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 'demi_ya_weather_bot'
-tok = '1996504919:AAEioyShvEzA9TnuYURVJq0FwBBWLQFAt3M'
+tok = 'your token'
 
 
 def help(update, context):
@@ -62,7 +62,7 @@ def ya_weather(n):
     shack = (54.013406, 41.721666)
     nn = (56.284443, 44.039993)
     sharya = (58.389616, 45.493691)
-    y = YaWeather(api_key='924c7f55-b02e-4033-af9d-d83d9a7b8ad6')
+    y = YaWeather(api_key='yandex_api_key')
     DESCRIPTION_DIC = {
         'clear': 'Ясно',
         'light-rain': 'Небольшой дождь',
@@ -123,7 +123,7 @@ def ya_weather(n):
         weath += 'ветер: ' + str(b[4]) + ' м/с,  ' + str(b[3]) + ' \n '
     return weath
 
-appid = "6df1933255d1e760e504f33b49dabe6c"
+appid = "openweather_api"
 
 def get_wind_direction(deg):
     l = ['С ','СВ',' В','ЮВ','Ю ','ЮЗ',' З','СЗ']
