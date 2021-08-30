@@ -6,8 +6,8 @@ import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-'demi_ya_weather_bot'
-tok = '1996504919:AAEioyShvEzA9TnuYURVJq0FwBBWLQFAt3M'
+
+tok = 'your token'
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, 
